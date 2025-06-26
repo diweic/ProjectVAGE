@@ -1,0 +1,13 @@
+{
+  "name": "my-simple-app",
+  "version": "1.0.0",
+  "description": "A simple app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "pg": "^8.16.0"
+  }
+}
