@@ -1,4 +1,4 @@
-// handle sign-up form validation and submission
+// handle sign-up form validation and submission on client-side
 document.getElementById('signupForm').addEventListener('submit', async (e) => {
     e.preventDefault();
 

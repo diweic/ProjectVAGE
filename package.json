@@ -1,7 +1,7 @@
 {
-  "name": "my-simple-app",
+  "name": "project-vage",
   "version": "1.0.0",
-  "description": "A simple app",
+  "description": "A simple app TBU",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

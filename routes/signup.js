@@ -1,4 +1,4 @@
-// routes/signup.js
+// routes/signup.js, handles user signup, stores hashed passwords in PostgreSQL
 const express = require('express');
 const bcrypt = require('bcrypt');
 const client = require('../db');
