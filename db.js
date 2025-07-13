@@ -1,16 +1,14 @@
-// create a PostgreSQL client using the pg module
+// db.js
 const { Client } = require('pg');
-const connectionString = process.env.DATABASE_URL;
+require('dotenv').config();
 
 const client = new Client({
-    connectionString,
-    ssl: {
-        rejectUnauthorized: false // Required for Heroku SSL
-    }
+    connectionString: process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false }
 });
 
 client.connect()
-    .then(() => console.log('Connected to Heroku Postgres DB'))
-    .catch(err => console.error('Connection error', err));
+    .then(() => console.log('Connected to DB'))
+    .catch(err => console.error('DB connection error', err));
 
 module.exports = client;
