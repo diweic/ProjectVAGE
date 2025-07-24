@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json()); // for parsing application/json
-// app.use(express.static(path.join(__dirname, 'public'))); // serve static files
+app.use(express.static(path.join(__dirname, 'client/build'))); // Serve React frontend
 
 // API routes
 app.use('/api/signup', signupRoute);
@@ -18,4 +18,8 @@ app.use('/api/user-profile', profileRoute);
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/build/index.html'));
 });
