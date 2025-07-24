@@ -1,4 +1,4 @@
-// src/App.js
+// client/src/App.js
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Login';
 import Profile from './Profile';
