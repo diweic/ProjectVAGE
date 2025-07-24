@@ -1,74 +1,3 @@
-2025-07-24T20:31:57.837945+00:00 app[web.1]: > project-vage@1.0.0 start
-2025-07-24T20:31:57.837946+00:00 app[web.1]: > node server.js
-2025-07-24T20:31:57.837946+00:00 app[web.1]: 
-2025-07-24T20:31:57.943243+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild)
-2025-07-24T20:31:57.970344+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: 🔐 encrypt with dotenvx: https://dotenvx.com)
-2025-07-24T20:31:57.970969+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  enable debug logging with { debug: true })
-2025-07-24T20:31:57.974401+00:00 app[web.1]: /app/node_modules/path-to-regexp/dist/index.js:73
-2025-07-24T20:31:57.974401+00:00 app[web.1]: throw new TypeError(`Missing parameter name at ${i}: ${DEBUG_URL}`);
-2025-07-24T20:31:57.974402+00:00 app[web.1]: ^
-2025-07-24T20:31:57.974402+00:00 app[web.1]: 
-2025-07-24T20:31:57.974402+00:00 app[web.1]: TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError
-2025-07-24T20:31:57.974403+00:00 app[web.1]: at name (/app/node_modules/path-to-regexp/dist/index.js:73:19)
-2025-07-24T20:31:57.974403+00:00 app[web.1]: at lexer (/app/node_modules/path-to-regexp/dist/index.js:91:27)
-2025-07-24T20:31:57.974403+00:00 app[web.1]: at lexer.next (<anonymous>)
-2025-07-24T20:31:57.974403+00:00 app[web.1]: at Iter.peek (/app/node_modules/path-to-regexp/dist/index.js:106:38)
-2025-07-24T20:31:57.974404+00:00 app[web.1]: at Iter.tryConsume (/app/node_modules/path-to-regexp/dist/index.js:112:28)
-2025-07-24T20:31:57.974404+00:00 app[web.1]: at Iter.text (/app/node_modules/path-to-regexp/dist/index.js:128:30)
-2025-07-24T20:31:57.974404+00:00 app[web.1]: at consume (/app/node_modules/path-to-regexp/dist/index.js:152:29)
-2025-07-24T20:31:57.974404+00:00 app[web.1]: at parse (/app/node_modules/path-to-regexp/dist/index.js:183:20)
-2025-07-24T20:31:57.974404+00:00 app[web.1]: at /app/node_modules/path-to-regexp/dist/index.js:294:74
-2025-07-24T20:31:57.974404+00:00 app[web.1]: at Array.map (<anonymous>)
-2025-07-24T20:31:57.974405+00:00 app[web.1]: 
-2025-07-24T20:31:57.974405+00:00 app[web.1]: Node.js v22.17.1
-2025-07-24T20:31:57.980981+00:00 app[web.1]: npm notice
-2025-07-24T20:31:57.980982+00:00 app[web.1]: npm notice New major version of npm available! 10.9.2 -> 11.5.1
-2025-07-24T20:31:57.980983+00:00 app[web.1]: npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.5.1
-2025-07-24T20:31:57.980983+00:00 app[web.1]: npm notice To update run: npm install -g npm@11.5.1
-2025-07-24T20:31:57.980984+00:00 app[web.1]: npm notice
-2025-07-24T20:31:58.056347+00:00 heroku[web.1]: Process exited with status 1
-2025-07-24T20:31:58.079931+00:00 heroku[web.1]: State changed from starting to crashed
-2025-07-24T20:31:58.083102+00:00 heroku[web.1]: State changed from crashed to starting
-2025-07-24T20:32:00.691698+00:00 heroku[web.1]: Starting process with command `npm start`
-2025-07-24T20:32:01.623392+00:00 app[web.1]: 
-2025-07-24T20:32:01.623411+00:00 app[web.1]: > project-vage@1.0.0 start
-2025-07-24T20:32:01.623412+00:00 app[web.1]: > node server.js
-2025-07-24T20:32:01.623412+00:00 app[web.1]: 
-2025-07-24T20:32:01.729244+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  enable debug logging with { debug: true })
-2025-07-24T20:32:01.756880+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  enable debug logging with { debug: true })
-2025-07-24T20:32:01.757686+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`)
-2025-07-24T20:32:01.761262+00:00 app[web.1]: /app/node_modules/path-to-regexp/dist/index.js:73
-2025-07-24T20:32:01.761263+00:00 app[web.1]: throw new TypeError(`Missing parameter name at ${i}: ${DEBUG_URL}`);
-2025-07-24T20:32:01.761263+00:00 app[web.1]: ^
-2025-07-24T20:32:01.761264+00:00 app[web.1]: 
-2025-07-24T20:32:01.761264+00:00 app[web.1]: TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError
-2025-07-24T20:32:01.761265+00:00 app[web.1]: at name (/app/node_modules/path-to-regexp/dist/index.js:73:19)
-2025-07-24T20:32:01.761265+00:00 app[web.1]: at lexer (/app/node_modules/path-to-regexp/dist/index.js:91:27)
-2025-07-24T20:32:01.761265+00:00 app[web.1]: at lexer.next (<anonymous>)
-2025-07-24T20:32:01.761266+00:00 app[web.1]: at Iter.peek (/app/node_modules/path-to-regexp/dist/index.js:106:38)
-2025-07-24T20:32:01.761273+00:00 app[web.1]: at Iter.tryConsume (/app/node_modules/path-to-regexp/dist/index.js:112:28)
-2025-07-24T20:32:01.761273+00:00 app[web.1]: at Iter.text (/app/node_modules/path-to-regexp/dist/index.js:128:30)
-2025-07-24T20:32:01.761273+00:00 app[web.1]: at consume (/app/node_modules/path-to-regexp/dist/index.js:152:29)
-2025-07-24T20:32:01.761274+00:00 app[web.1]: at parse (/app/node_modules/path-to-regexp/dist/index.js:183:20)
-2025-07-24T20:32:01.761274+00:00 app[web.1]: at /app/node_modules/path-to-regexp/dist/index.js:294:74
-2025-07-24T20:32:01.761274+00:00 app[web.1]: at Array.map (<anonymous>)
-2025-07-24T20:32:01.761274+00:00 app[web.1]: 
-2025-07-24T20:32:01.761275+00:00 app[web.1]: Node.js v22.17.1
-2025-07-24T20:32:01.767237+00:00 app[web.1]: npm notice
-2025-07-24T20:32:01.767238+00:00 app[web.1]: npm notice New major version of npm available! 10.9.2 -> 11.5.1
-2025-07-24T20:32:01.767239+00:00 app[web.1]: npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.5.1
-2025-07-24T20:32:01.767239+00:00 app[web.1]: npm notice To update run: npm install -g npm@11.5.1
-2025-07-24T20:32:01.767239+00:00 app[web.1]: npm notice
-2025-07-24T20:32:01.841755+00:00 heroku[web.1]: Process exited with status 1
-2025-07-24T20:32:01.870126+00:00 heroku[web.1]: State changed from starting to crashed
-2025-07-24T20:53:01.750901+00:00 heroku[web.1]: State changed from crashed to starting
-2025-07-24T20:53:04.459534+00:00 heroku[web.1]: Starting process with command `npm start`
-2025-07-24T20:53:05.239749+00:00 app[web.1]: 
-2025-07-24T20:53:05.239770+00:00 app[web.1]: > project-vage@1.0.0 start
-2025-07-24T20:53:05.239770+00:00 app[web.1]: > node server.js
-2025-07-24T20:53:05.239771+00:00 app[web.1]: 
-2025-07-24T20:53:05.349285+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  override existing env vars with { override: true })
-2025-07-24T20:53:05.375325+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: 🔐 encrypt with dotenvx: https://dotenvx.com)
 2025-07-24T20:53:05.375964+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  write to custom object with { processEnv: myObject })
 2025-07-24T20:53:05.379477+00:00 app[web.1]: /app/node_modules/path-to-regexp/dist/index.js:73
 2025-07-24T20:53:05.379478+00:00 app[web.1]: throw new TypeError(`Missing parameter name at ${i}: ${DEBUG_URL}`);
@@ -98,3 +27,74 @@
 2025-07-24T21:06:15.585653+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/" host=project-vage-24660b56664d.herokuapp.com request_id=b360aa85-bb74-20fa-b8d9-6ef726fdd298 fwd="" dyno= connect=0ms service=0ms status=499 bytes=567 protocol=http1.1 tls=true tls_version=unknown
 2025-07-24T21:11:19.523593+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=project-vage-24660b56664d.herokuapp.com request_id=729574b3-ddd9-48e2-dfbf-7c5b1c3de2d0 fwd="" dyno= connect=0ms service=0ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
 2025-07-24T21:12:54.402704+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=project-vage-24660b56664d.herokuapp.com request_id=01604f67-0c31-c425-1275-fac5a06f301f fwd="" dyno= connect=0ms service=0ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2025-07-24T21:24:16.000000+00:00 app[api]: Build started by user zingy-katanas-0i@icloud.com
+2025-07-24T21:24:32.365358+00:00 app[api]: Deploy bf300997 by user zingy-katanas-0i@icloud.com
+2025-07-24T21:24:32.365358+00:00 app[api]: Release v32 created by user zingy-katanas-0i@icloud.com
+2025-07-24T21:24:33.000000+00:00 app[api]: Build succeeded
+2025-07-24T21:24:33.668390+00:00 heroku[web.1]: State changed from crashed to starting
+2025-07-24T21:24:36.162325+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-07-24T21:24:36.886757+00:00 app[web.1]: 
+2025-07-24T21:24:36.886782+00:00 app[web.1]: > project-vage@1.0.0 start
+2025-07-24T21:24:36.886782+00:00 app[web.1]: > node server.js
+2025-07-24T21:24:36.886783+00:00 app[web.1]: 
+2025-07-24T21:24:36.996329+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  override existing env vars with { override: true })
+2025-07-24T21:24:37.022211+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild)
+2025-07-24T21:24:37.022833+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' })
+2025-07-24T21:24:37.026321+00:00 app[web.1]: /app/node_modules/path-to-regexp/dist/index.js:73
+2025-07-24T21:24:37.026321+00:00 app[web.1]: throw new TypeError(`Missing parameter name at ${i}: ${DEBUG_URL}`);
+2025-07-24T21:24:37.026321+00:00 app[web.1]: ^
+2025-07-24T21:24:37.026322+00:00 app[web.1]: 
+2025-07-24T21:24:37.026323+00:00 app[web.1]: TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError
+2025-07-24T21:24:37.026323+00:00 app[web.1]: at name (/app/node_modules/path-to-regexp/dist/index.js:73:19)
+2025-07-24T21:24:37.026323+00:00 app[web.1]: at lexer (/app/node_modules/path-to-regexp/dist/index.js:91:27)
+2025-07-24T21:24:37.026324+00:00 app[web.1]: at lexer.next (<anonymous>)
+2025-07-24T21:24:37.026324+00:00 app[web.1]: at Iter.peek (/app/node_modules/path-to-regexp/dist/index.js:106:38)
+2025-07-24T21:24:37.026324+00:00 app[web.1]: at Iter.tryConsume (/app/node_modules/path-to-regexp/dist/index.js:112:28)
+2025-07-24T21:24:37.026324+00:00 app[web.1]: at Iter.text (/app/node_modules/path-to-regexp/dist/index.js:128:30)
+2025-07-24T21:24:37.026324+00:00 app[web.1]: at consume (/app/node_modules/path-to-regexp/dist/index.js:152:29)
+2025-07-24T21:24:37.026324+00:00 app[web.1]: at parse (/app/node_modules/path-to-regexp/dist/index.js:183:20)
+2025-07-24T21:24:37.026325+00:00 app[web.1]: at /app/node_modules/path-to-regexp/dist/index.js:294:74
+2025-07-24T21:24:37.026325+00:00 app[web.1]: at Array.map (<anonymous>)
+2025-07-24T21:24:37.026327+00:00 app[web.1]: 
+2025-07-24T21:24:37.026327+00:00 app[web.1]: Node.js v22.17.1
+2025-07-24T21:24:37.032738+00:00 app[web.1]: npm notice
+2025-07-24T21:24:37.032739+00:00 app[web.1]: npm notice New major version of npm available! 10.9.2 -> 11.5.1
+2025-07-24T21:24:37.032739+00:00 app[web.1]: npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.5.1
+2025-07-24T21:24:37.032740+00:00 app[web.1]: npm notice To update run: npm install -g npm@11.5.1
+2025-07-24T21:24:37.032740+00:00 app[web.1]: npm notice
+2025-07-24T21:24:37.104163+00:00 heroku[web.1]: Process exited with status 1
+2025-07-24T21:24:37.129732+00:00 heroku[web.1]: State changed from starting to crashed
+2025-07-24T21:24:37.133563+00:00 heroku[web.1]: State changed from crashed to starting
+2025-07-24T21:24:39.562194+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-07-24T21:24:40.327891+00:00 app[web.1]: 
+2025-07-24T21:24:40.327939+00:00 app[web.1]: > project-vage@1.0.0 start
+2025-07-24T21:24:40.327942+00:00 app[web.1]: > node server.js
+2025-07-24T21:24:40.327942+00:00 app[web.1]: 
+2025-07-24T21:24:40.421556+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: 🔐 encrypt with dotenvx: https://dotenvx.com)
+2025-07-24T21:24:40.447340+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild)
+2025-07-24T21:24:40.447935+00:00 app[web.1]: [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  enable debug logging with { debug: true })
+2025-07-24T21:24:40.451332+00:00 app[web.1]: /app/node_modules/path-to-regexp/dist/index.js:73
+2025-07-24T21:24:40.451334+00:00 app[web.1]: throw new TypeError(`Missing parameter name at ${i}: ${DEBUG_URL}`);
+2025-07-24T21:24:40.451335+00:00 app[web.1]: ^
+2025-07-24T21:24:40.451335+00:00 app[web.1]: 
+2025-07-24T21:24:40.451337+00:00 app[web.1]: TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError
+2025-07-24T21:24:40.451337+00:00 app[web.1]: at name (/app/node_modules/path-to-regexp/dist/index.js:73:19)
+2025-07-24T21:24:40.451337+00:00 app[web.1]: at lexer (/app/node_modules/path-to-regexp/dist/index.js:91:27)
+2025-07-24T21:24:40.451337+00:00 app[web.1]: at lexer.next (<anonymous>)
+2025-07-24T21:24:40.451338+00:00 app[web.1]: at Iter.peek (/app/node_modules/path-to-regexp/dist/index.js:106:38)
+2025-07-24T21:24:40.451338+00:00 app[web.1]: at Iter.tryConsume (/app/node_modules/path-to-regexp/dist/index.js:112:28)
+2025-07-24T21:24:40.451338+00:00 app[web.1]: at Iter.text (/app/node_modules/path-to-regexp/dist/index.js:128:30)
+2025-07-24T21:24:40.451338+00:00 app[web.1]: at consume (/app/node_modules/path-to-regexp/dist/index.js:152:29)
+2025-07-24T21:24:40.451338+00:00 app[web.1]: at parse (/app/node_modules/path-to-regexp/dist/index.js:183:20)
+2025-07-24T21:24:40.451339+00:00 app[web.1]: at /app/node_modules/path-to-regexp/dist/index.js:294:74
+2025-07-24T21:24:40.451339+00:00 app[web.1]: at Array.map (<anonymous>)
+2025-07-24T21:24:40.451350+00:00 app[web.1]: 
+2025-07-24T21:24:40.451350+00:00 app[web.1]: Node.js v22.17.1
+2025-07-24T21:24:40.457808+00:00 app[web.1]: npm notice
+2025-07-24T21:24:40.457809+00:00 app[web.1]: npm notice New major version of npm available! 10.9.2 -> 11.5.1
+2025-07-24T21:24:40.457810+00:00 app[web.1]: npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.5.1
+2025-07-24T21:24:40.457810+00:00 app[web.1]: npm notice To update run: npm install -g npm@11.5.1
+2025-07-24T21:24:40.457810+00:00 app[web.1]: npm notice
+2025-07-24T21:24:40.524719+00:00 heroku[web.1]: Process exited with status 1
+2025-07-24T21:24:40.549546+00:00 heroku[web.1]: State changed from starting to crashed
+2025-07-24T21:25:53.136171+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=project-vage-24660b56664d.herokuapp.com request_id=cfc691cd-0271-26d2-4951-56b26322e942 fwd="" dyno= connect=0ms service=0ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
