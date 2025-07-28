@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Signup() {
   const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
@@ -16,7 +17,7 @@ function Signup() {
       const res = await fetch('/api/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ email, username, password })
       });
 
       const data = await res.json();
@@ -27,7 +28,7 @@ function Signup() {
       }
 
       setSuccess('Signup successful! Redirecting to login...');
-      setTimeout(() => navigate('/login'), 1500); // redirect after delay
+      setTimeout(() => navigate('/login'), 1500);
     } catch (err) {
       setError('Server error. Try again.');
     }
@@ -45,6 +46,14 @@ function Signup() {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
+        /><br /><br />
+
+        <input
+          type="text"
+          placeholder="Username (must be unique)"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
           required
         /><br /><br />
 
