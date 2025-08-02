@@ -19,3 +19,6 @@ yarn-error.log*
 
 # Heroku build artifacts (if any)
 *.log
+
+# ASW access keys (do not commit these)
+vage-image-uploader_accessKeys.csv
