@@ -1,3 +1,4 @@
+// routes/upload.js
 const express = require('express');
 const multer = require('multer');
 const AWS = require('aws-sdk');
@@ -30,13 +31,12 @@ router.post('/', upload.array('images', 9), async (req, res) => {
       const fileExtension = file.originalname.split('.').pop();
       const key = `posts/${uuidv4()}.${fileExtension}`;
 
-      return s3.upload({
-        Bucket: process.env.S3_BUCKET_NAME,
-        Key: key,
-        Body: file.buffer,
-        ContentType: file.mimetype,
-        ACL: 'public-read' // Make file public
-      }).promise();
+    return s3.upload({
+      Bucket: process.env.S3_BUCKET_NAME,
+      Key: key,
+      Body: file.buffer,
+      ContentType: file.mimetype
+    }).promise();
     });
 
     const results = await Promise.all(uploadPromises);
