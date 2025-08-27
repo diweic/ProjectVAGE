@@ -1,5 +1,5 @@
 // client/src/NewPosts.jsx
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function NewPost() {
@@ -8,6 +8,14 @@ function NewPost() {
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      navigate('/login');
+      return;
+    }
+  }, [navigate]);
 
   const handleImageChange = (e) => {
     const files = Array.from(e.target.files);
