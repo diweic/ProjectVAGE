@@ -60,6 +60,9 @@ function Login() {
 
         <button type="submit">Login</button>
       </form>
+      
+      <br />
+      <button onClick={() => navigate('/signup')}>Create an Account</button>
     </div>
   );
 }

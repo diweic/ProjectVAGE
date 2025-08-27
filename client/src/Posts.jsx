@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Posts() {
   const [posts, setPosts] = useState([]);
   const [imagesMap, setImagesMap] = useState({});
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchPosts() {
@@ -26,6 +28,9 @@ function Posts() {
   return (
     <div>
       <h1>All Posts</h1>
+      <button onClick={() => navigate('/profile')}>Back to Profile</button>
+      <button onClick={() => navigate('/new-post')}>Create a Post</button>
+      <br /><br />
       {error && <p style={{ color: 'red' }}>{error}</p>}
 
       {posts.map(post => (

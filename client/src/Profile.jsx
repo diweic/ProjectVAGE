@@ -41,6 +41,10 @@ function Profile() {
         localStorage.removeItem('token');
         navigate('/login');
       }}>Logout</button>
+      
+      <br /><br />
+      <button onClick={() => navigate('/posts')}>View All Posts</button>
+      <button onClick={() => navigate('/new-post')}>Create a Post</button>
     </div>
   );
 }
