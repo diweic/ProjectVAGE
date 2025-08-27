@@ -37,7 +37,7 @@ router.post('/', authenticateToken, upload.array('images', 9), async (req, res) 
       Key: key,
       Body: file.buffer,
       ContentType: file.mimetype,
-      ACL: 'public-read' 
+      // ACL: 'public-read' 
     }).promise();
     });
 
