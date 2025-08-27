@@ -45,7 +45,7 @@ router.post('/', authenticateToken, upload.array('images', 9), async (req, res) 
     const urls = results.map(result => result.Location);
     res.status(200).json({ urls });
   } catch (err) {
-    console.error('S3 upload error:', err);
+    console.error('S3 upload error:', err.message, err.stack);
     res.status(500).json({ message: 'Failed to upload image(s)' });
   }
 });
