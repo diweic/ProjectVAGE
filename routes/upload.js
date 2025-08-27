@@ -35,7 +35,8 @@ router.post('/', upload.array('images', 9), async (req, res) => {
       Bucket: process.env.S3_BUCKET_NAME,
       Key: key,
       Body: file.buffer,
-      ContentType: file.mimetype
+      ContentType: file.mimetype,
+      ACL: 'public-read' 
     }).promise();
     });
 
