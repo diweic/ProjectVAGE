@@ -3,6 +3,7 @@ const express = require('express');
 const multer = require('multer');
 const AWS = require('aws-sdk');
 const { v4: uuidv4 } = require('uuid');
+const authenticateToken = require('../middleware/auth');
 require('dotenv').config();
 
 const router = express.Router();
@@ -21,7 +22,7 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
 // POST /api/upload - accept up to 9 files
-router.post('/', upload.array('images', 9), async (req, res) => {
+router.post('/', authenticateToken, upload.array('images', 9), async (req, res) => {
   if (!req.files || req.files.length === 0) {
     return res.status(400).json({ message: 'No files uploaded.' });
   }
