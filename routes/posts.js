@@ -46,13 +46,31 @@ router.post('/', authenticateToken, async (req, res) => {
 });
 
 
-// GET /api/posts - Retrieve all posts (public)
+// GET /api/posts - Retrieve all posts with images
 router.get('/', async (req, res) => {
   try {
-    const result = await pool.query(
+    const postsResult = await pool.query(
       'SELECT * FROM posts ORDER BY created_at DESC'
     );
-    res.json(result.rows);
+
+    const postIds = postsResult.rows.map(p => p.id);
+
+    const imagesResult = await pool.query(
+      'SELECT post_id, image_url FROM post_images WHERE post_id = ANY($1)',
+      [postIds]
+    );
+
+    // Build a map: { postId: [img1, img2, ...] }
+    const imagesByPostId = {};
+    imagesResult.rows.forEach(({ post_id, image_url }) => {
+      if (!imagesByPostId[post_id]) imagesByPostId[post_id] = [];
+      imagesByPostId[post_id].push(image_url);
+    });
+
+    res.json({
+      posts: postsResult.rows,
+      imagesByPostId
+    });
   } catch (err) {
     console.error('Error fetching posts:', err);
     res.status(500).json({ message: 'Error fetching posts' });
