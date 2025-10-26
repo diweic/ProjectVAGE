@@ -6,12 +6,18 @@ function Signup() {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState(''); 
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (password !== confirmPassword) {
+      setError("Passwords do not match.");
+      return;
+    }
 
     try {
       const res = await fetch('/api/signup', {
@@ -64,6 +70,14 @@ function Signup() {
           onChange={(e) => setPassword(e.target.value)}
           required
         /><br /><br />
+
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+          required
+        /><br /><br />        
 
         <button type="submit">Sign Up</button>
       </form>
