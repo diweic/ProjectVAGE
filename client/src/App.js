@@ -5,12 +5,13 @@ import Login from './Login';
 import Profile from './Profile';
 import NewPost from './NewPost';
 import Posts from './Posts';
+import Home from './Home'; 
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<h1>Home Page</h1>} />
+        <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
