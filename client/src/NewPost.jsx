@@ -83,7 +83,7 @@ function NewPost() {
       setMessage('Post submitted!');
       setContent('');
       setImages([]);
-      setTimeout(() => navigate('/profile'), 1000);
+      setTimeout(() => navigate('/posts'), 1000);
     } catch (err) {
       setError(err.message || 'Something went wrong.');
     }
