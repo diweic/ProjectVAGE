@@ -83,7 +83,7 @@ function Signup() {
       </form>
       
       <br />
-      <button onClick={() => navigate('/login')}>Login</button>
+      <button onClick={() => navigate('/login')}>Already have an account? Login</button>
     </div>
   );
 }
