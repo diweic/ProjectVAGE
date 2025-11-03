@@ -6,7 +6,7 @@ function Home() {
 
   return (
     <div>
-      <h1>Welcome to Vintage Anime Goods Exchange! </h1>
+      <h1>Welcome to Vintage Anime Goods Exchange :&rpar;</h1>
       <h3>A platform to trade anime fan goods like badges, figures, and more.</h3>
 
       <br />

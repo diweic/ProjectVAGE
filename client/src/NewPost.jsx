@@ -97,7 +97,7 @@ function NewPost() {
 
       <form onSubmit={handleSubmit}>
         <textarea
-          placeholder="What's this post about?"
+          placeholder="Write a few words to describe your anime goods!"
           value={content}
           onChange={(e) => setContent(e.target.value)}
           rows={4}
