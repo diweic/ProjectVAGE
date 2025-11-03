@@ -115,6 +115,10 @@ function NewPost() {
 
         <button type="submit">Post</button>
       </form>
+      <br /><br />      
+      <button onClick={() => navigate('/profile')}>Back to Profile</button>
+      <br /><br />
+      <button onClick={() => navigate('/posts')}>View All Posts</button>
     </div>
   );
 }
