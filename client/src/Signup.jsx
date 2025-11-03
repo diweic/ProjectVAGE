@@ -84,6 +84,8 @@ function Signup() {
       
       <br />
       <button onClick={() => navigate('/login')}>Already have an account? Login here</button>
+      <br /><br />
+      <button onClick={() => navigate('/posts')}>View All Posts</button>
     </div>
   );
 }
