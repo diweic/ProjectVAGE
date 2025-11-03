@@ -1,0 +1,10 @@
+/* Center everything on all pages */
+body {
+  text-align: center;
+}
+
+#root > * {
+  margin: 0 auto;
+  text-align: center;
+}
+
