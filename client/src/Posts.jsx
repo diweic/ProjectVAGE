@@ -38,7 +38,7 @@ function Posts() {
         <div key={post.id} style={{ border: '1px solid #ccc', padding: '1em', marginBottom: '1em' }}>
           <p><strong>@{post.author_username}</strong></p>
           <p>{post.content}</p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5em' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5em', justifyContent: 'center' }}>
             {(imagesMap[post.id] || []).map((url, idx) => (
               <img
                 key={idx}
