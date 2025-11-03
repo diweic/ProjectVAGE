@@ -62,7 +62,7 @@ function Login() {
       </form>
       
       <br />
-      <button onClick={() => navigate('/signup')}>Create an Account</button>
+      <button onClick={() => navigate('/signup')}>Create Your Free Account</button>
       <br /><br />
       <button onClick={() => navigate('/posts')}>View All Posts</button>
     </div>

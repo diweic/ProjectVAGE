@@ -6,15 +6,15 @@ function Home() {
 
   return (
     <div>
-      <h1>Welcome to Vintage Anime Goods Exchange :)</h1>
-      <h3>A platform to trade anime fan goods like badges, figures, and more.</h3>
+      <h1>Welcome to Vintage Anime Goods Exchange :))</h1>
+      <h3> A platform to trade anime fan goods like badges, figures, and more...</h3>
 
       <br />
       <button onClick={() => navigate('/posts')}>View All Posts</button>
       <br /><br />
-      <button onClick={() => navigate('/signup')}>Sign Up</button>
-      <br /><br />
       <button onClick={() => navigate('/login')}>Login</button>
+      <br /><br />
+      <button onClick={() => navigate('/signup')}>Create Your Free Account</button>
     </div>
   );
 }

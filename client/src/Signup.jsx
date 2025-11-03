@@ -79,7 +79,7 @@ function Signup() {
           required
         /><br /><br />        
 
-        <button type="submit">Sign Up</button>
+        <button type="submit">Create Account</button>
       </form>
       
       <br />
